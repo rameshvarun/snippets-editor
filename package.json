@@ -1,0 +1,13 @@
+{
+  "name": "snippets-editor",
+  "main": "./lib/main",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {
+    "@aki77/atom-input-dialog": "^0.1.3",
+    "cson": "^4.0.0",
+    "etch": "^0.9.5"
+  }
+}
