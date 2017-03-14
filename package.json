@@ -1,5 +1,9 @@
 {
   "name": "snippets-editor",
+  "description": "A view for editing your Atom snippets.",
+  "author": "Varun Ramesh <varunramesh@live.com>",
+  "repository": "https://github.com/rameshvarun/snippets-editor",
+  "version": "0.0.0",
   "main": "./lib/main",
   "license": "MIT",
   "engines": {
