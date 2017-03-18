@@ -43,5 +43,20 @@
     display: flex;
     position: relative;
     min-width: 0;
+
+    .setting-title {
+      font-size: 1.2em;
+      -webkit-user-select: none;
+    }
+
+    .setting-description {
+      color: @text-color-subtle;
+      -webkit-user-select: none;
+      cursor: default;
+
+      &:empty {
+        display: none;
+      }
+    }
   }
 }
