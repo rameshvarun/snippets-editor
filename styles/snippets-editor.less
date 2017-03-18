@@ -37,6 +37,37 @@
     overflow-x: auto;
   }
 
+  li + li {
+    margin-top: 0;
+  }
+
+  li > a {
+    border-radius: 1px !important;
+    padding: 12px 14px;
+    line-height: 16px;
+    opacity: .85;
+    transition: opacity .1s ease-in;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0, 7%);
+
+    &:hover {
+      opacity: 1;
+      box-shadow: inset 0 -1px 0 rgba(0,0,0, 7%) !important;
+    }
+  }
+
+  li:first-child {margin-top:2px;}
+  li:last-child {margin-bottom: 10px;}
+
+  li.active a, li.active a:hover {
+    opacity: 1;
+    box-shadow: 0 0 0 1px darken(#3c76dd, 10%) !important;
+
+    .package-author, .package-version {
+      color: #fff;
+      opacity: .6;
+    }
+  }
+
   .edit-snippet {
     flex: 8.4;
     flex-flow: column;
