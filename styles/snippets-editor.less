@@ -4,7 +4,7 @@
   display: flex;
   overflow: auto;
 
-  > .button-area {
+  .button-area {
     margin: 15px;
     > .btn {
       width: 100%;
@@ -47,11 +47,11 @@
     line-height: 16px;
     opacity: .85;
     transition: opacity .1s ease-in;
-    box-shadow: inset 0 -1px 0 rgba(0,0,0, 7%);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0, 25%);
 
     &:hover {
       opacity: 1;
-      box-shadow: inset 0 -1px 0 rgba(0,0,0, 7%) !important;
+      box-shadow: inset 0 -1px 0 rgba(0,0,0, 25%) !important;
     }
   }
 
@@ -74,6 +74,11 @@
     display: flex;
     position: relative;
     min-width: 0;
+    padding: 25px;
+
+    .control-group + .control-group {
+      margin-top:  1.5em;
+    }
 
     .setting-title {
       font-size: 1.2em;
@@ -81,6 +86,7 @@
     }
 
     .setting-description {
+      margin-top:  0.2em;
       color: @text-color-subtle;
       -webkit-user-select: none;
       cursor: default;
@@ -88,6 +94,10 @@
       &:empty {
         display: none;
       }
+    }
+
+    .editor-container {
+      margin-top:  0.2em;
     }
   }
 }
